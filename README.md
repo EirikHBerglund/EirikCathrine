@@ -1,2 +1,0 @@
-# EirikCathrine
-Created with CodeSandbox
