@@ -1,0 +1,35 @@
+body {
+  background: linear-gradient(black, white) no-repeat;
+}
+
+.header {
+  font-family: sofia;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.header-text {
+  text-align: center;
+}
+
+.header-sideimg {
+  max-height: 30%;
+  max-width: 30%;
+  vertical-align: middle;
+}
+
+.header-img {
+  width: 100%;
+}
+
+.content {
+  width: 90%;
+  background: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+}
