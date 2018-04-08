@@ -23,8 +23,6 @@ export class GiftListComponent extends React.Component {
           kjøpt. Dersom de kjøper på nett kan ein legge varen i den digitale
           handlekurva ved å følge linken over. Dersom de kjøper i butikk, oppgi
           bryllup til <em>Marceliussen</em> så legg dei det til lista for deg.
-          Nyttar du ein annan forhandlar, send ei melding til Fridtjof om kva
-          gjenstand de har kjøpt så korrigerer me ønskjelista.
         </p>
         <Iframe
           url="https://www.kitchn.no/bryllup/vis-liste/?wishListId=92318"
