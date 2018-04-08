@@ -133,7 +133,7 @@ class HeaderComponent extends React.Component {
                 width="100%"
                 height="100%"
                 alt=""
-                src="https://lh3.googleusercontent.com/25WTV0kLsITrxYaPAWXCtsALFbB5YXG3Gt252Arr3jhb170WGRF2GAqAlk5v_XueTvVHZxO2CYOjO0IJq-nYVvyof_Kjhn3scX-I2_zmVoceGAOUyy8u4xRMC4qO7Gl-E9HAPbKyjtDG1IFk_NAWLcMH0gGnM2Q94JYA-vym5bAhhO7ht6KDX1AuDS7XepSgX63qU348eLJRMtIFwoyp4Aoz1RaNbYEsRto5bopV-F3qm6WFYk5OlGwDp8WPDcXSFAphB-w5Sp54Z5tNPgFIEzE9s0zot-_zDf_TERpGwtQ0YbdhQLDelz6Auwv5N9HrgFojuhlTdFlaA2_NQolTeZXm_-qYm7m8l9M6WU44Er0XleAjFzlCpgJuUYw3njQhUFUr6yyAp15G_N2k62qEpAOx3TgKrxOmIppGaaKp0NiUnwg5QQcSONCBoJ11dCudq6DRx1XlPze_9O7ULEzlCZadvyY6W3dw47EjQjbRqoMUZAWTFr1I1RkqoY3Y9m7_WgP_pfDJk-Fprs3gt47tMfbXoiy-U4DwV8Hkn_gGmKEvqh_Zp7FfD5EE5t-jy7rpaFrE1LYxtCiEYnP-cWg3nLuAJs99kXZf1sbT9hw=w1056-h900-no"
+                src="http://cathrineogeirik.no/images/branch-1-l.png"
               />
             </div>
             <div className="header-text col-sm-8 col-xs-6">
@@ -143,14 +143,14 @@ class HeaderComponent extends React.Component {
             <img
               className="header-sideimg col-sm-2 col-xs-3"
               alt=""
-              src="https://lh3.googleusercontent.com/7aMIJr8IG-hNBYKQES9R0B1r7JMkbZlIY9712IVovazMUz6lrl6Tj6hvHbcU0SClyx0pVtMuaRz0dm9DcnTnLO66jj2dVSOU7FdGMlzrw-wtnHrtAuH1DHV_7o0bX7SC4Hm07APeef6YcE30idTiw3DOUsu3RzqshbATXH-VCGDC-NhSKS8b8k0-bMDcYNqe1_jn_FE_vveKd5v5M3hnY2IGVLZoGm4c6ZtfVOLgDADESyOmIaHP6ijxSEUCv_-amnQ2RccMcT1WvsAWKmCE2nez6Swd_mfqIRSA8X4L98iIkIZooRNb2YJWEsZXKf9Yzpo91EqtKVPC2dtHx7f2TS16h3uQ-eRXUhDJmmkNHW-QP_Yu0awK303E5xuIGg1_wqSW443UfF26d8zAnrbhoDJqwm4B61n9PKLyHgUne0RhesoGlFMJzCLKbz9mMtANOsf0Q2qdIgnvwgJPjAoIEEA8f5-e829Ekv7OUE8fUAN_USrt7vQqCl6PEkItEVitOH67BHChlcU_qCX9eo66BslY_vsUC1l2L7XeiTIBd5vc3AhKatwaqwYdoiRh5a3L4_wTpgLFIC6NfJFr-CxlNYV3_y2pUnW-qA77JMg=w1056-h900-no"
+              src="http://cathrineogeirik.no/images/branch-1-r.png"
             />
           </div>
           <div className="row">
             <img
               className="header-img col-sm-12"
               alt="E&C"
-              src="https://lh3.googleusercontent.com/3Fs3jVklE9fP7uk4p2xxZMjSbGvcMX0nGKG_UeqQzx6NWURvVgae0GhlLCjgOGoa01QNtOkvPaxzabeAyBy_64qF6R64WS5WBdsobpF5zdHURCne5uOU8KamzZPU0LTXg1DJauduy2wcQsMMBVOgKGKYSq0JAYK7RSUZYAxwwerbxVoo3kIUd6MQmaOuIZz387y2oKdu5tZf3RV_cNku4KVQQHuxvQ5zkXbwHehdoBGmlpJOw3OCXDA79P4u0cnBaGg8A9pvbDKnAXFN_lRXFH27ydq9BsitY4oLS2k_GA2ThiMADqCsA1aGu6voeYmn5LeQ-AjN2h7RsI70xRV8tZiH3l3_uZzmazoZjwcCNkSe9NBA7o2HOxJShQpGw_WV-EJteoX3xkO8adHfm1HpAUpA0EYm-jbKxsaOFINHi73wVrEEKwynWcmpPcvk3G-ZCIPTFJ6Zp7uqhcaHAU8rob1StFF0TyZ9z1SG0_kCrbOj_mFxKDeeKXKsyOwoJOwsVLJyITXkU6rrJX76v-lSYWPA0910jtfIQO1IabraFlcX9xAOKdOyvYJUGn6s-GKZ2z_p-c8lSMw2h5Lef9VA9XgQSxiw4EeidXBoTA0=w850-h220-no"
+              src="http://cathrineogeirik.no/images/header-image.png"
             />
           </div>
         </div>
