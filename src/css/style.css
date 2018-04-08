@@ -23,6 +23,7 @@ body {
 }
 
 .content {
+  margin-top: 10px;
   width: 90%;
   background: white;
   border-radius: 10px;
@@ -32,4 +33,23 @@ body {
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding-box;
   background-clip: padding-box;
+}
+
+.nav-item > li {
+  padding: 0px;
+  background: yellow;
+}
+
+a {
+  padding: 0px;
+}
+
+.mapcontainer-wrapper {
+  height: 55vh;
+  width: 100%;
+  padding: 1vw;
+}
+
+.map-window {
+  left: 14%;
 }
