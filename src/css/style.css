@@ -3,13 +3,15 @@ body {
 }
 
 .header {
-  font-family: sofia;
+  font-family: Playfair Display;
   text-align: center;
   vertical-align: middle;
 }
 
 .header-text {
   text-align: center;
+  vertical-align: center;
+  font-size: 5vw;
 }
 
 .header-sideimg {
@@ -24,6 +26,7 @@ body {
 
 .content {
   margin-top: 10px;
+  margin-bottom: 10vh;
   width: 90%;
   background: white;
   border-radius: 10px;
@@ -44,12 +47,38 @@ a {
   padding: 0px;
 }
 
-.mapcontainer-wrapper {
+.mapcontainer-wrapper2 {
   height: 55vh;
   width: 100%;
   padding: 1vw;
 }
 
+.mapcontainer-wrapper {
+  height: 55vh;
+  width: 100%;
+  padding: 10;
+  text-align: center;
+}
+
 .map-window {
   left: 14%;
+}
+
+.article {
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 2em;
+}
+
+.article-image {
+  max-width: 80%;
+}
+
+.article-image-wrapper {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.navbar {
+  margin-bottom: 0 !important;
 }
