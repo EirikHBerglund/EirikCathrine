@@ -4,6 +4,7 @@ import { Switch, BrowserRouter, Route } from "react-router-dom";
 import { OverviewComponent } from "./components/overviewComponent";
 import { NavComponent } from "./components/NavComponent";
 import { GiftListComponent } from "./components/GiftListComponent";
+import { ContactsComponent } from "./components/ContactsComponent";
 import MapContainer from "./components/MapContainer";
 
 import "./css/style.css";
@@ -50,6 +51,7 @@ const MainComponent = () => {
         component={TransportToMoldegaardComponent}
       />
       <Route path="/onskeliste" component={GiftListComponent} />
+      <Route path="/kontakter" component={ContactsComponent} />
     </Switch>
   );
 };
@@ -58,7 +60,7 @@ class MoldegaardComponent extends React.Component {
   render() {
     return (
       <div>
-        <h1>Moldegaard</h1>
+        <h3>Moldegaard</h3>
         <p>
           <strong>
             Mottakelse, middag og festligheter vil finne stad på Moldegaard.
@@ -94,7 +96,7 @@ class OsKyrkjeComponent extends React.Component {
   render() {
     return (
       <div>
-        <h1>Os Kyrkje</h1>
+        <h3>Os Kyrkje</h3>
 
         <p>
           <strong>
@@ -137,7 +139,7 @@ class HeaderComponent extends React.Component {
             />
           </div>
           <div className="header-text col-md-8 col-xs-6">
-            <h1>Eirik og Cathrine</h1>
+            <h1>Cathrine & Eirik</h1>
             <h2>23.06.2018</h2>
           </div>
           <img
@@ -167,7 +169,7 @@ class TransportToOsKyrkjeComponent extends React.Component {
   render() {
     return (
       <div>
-        <h1>Adkomst Os Kyrkje</h1>
+        <h3>Adkomst Os Kyrkje</h3>
         <p>Transport til Os Kyrkje må ein syte for sjølv.</p>
 
         <h4>Adkomst med bil</h4>
@@ -206,7 +208,7 @@ class TransportToMoldegaardComponent extends React.Component {
   render() {
     return (
       <div>
-        <h1>Transport Os Kyrkje til Moldegaard</h1>
+        <h3>Transport Os Kyrkje til Moldegaard</h3>
         <p>
           <strong>
             Me stiller med transport frå Os Kyrkje til Moldegaard for dei som
@@ -227,11 +229,10 @@ class TransportToMoldegaardComponent extends React.Component {
         <h4>Adkomst med bil</h4>
         <p>
           Moldegaard ligg langs Hatvikvegen - det er skilta til Moldegaard. Me
-          skal ha selskapet i
-          <emp> Stallmestergaarden</emp>. På bildet under er Stallmestergaarden
-          merka med gul firkant. Parkeringsplass me har til rådighet er markert
-          med blå firkant. Vegen markert med raud pil går til Hatvikvegen, medan
-          blå pil viser veg til parkområdet.
+          skal ha selskapet i <em>Stallmestergaarden</em>. På bildet under er
+          Stallmestergaarden merka med gul firkant. Parkeringsplass me har til
+          rådighet er markert med blå firkant. Vegen markert med raud pil går
+          til Hatvikvegen, medan blå pil viser veg til parkområdet.
         </p>
 
         <div className="article-image-wrapper">

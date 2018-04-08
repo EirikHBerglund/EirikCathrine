@@ -34,6 +34,9 @@ export class NavComponent extends React.Component {
                 <MenuItem>Os Kyrkje til Moldegaard</MenuItem>
               </LinkContainer>
             </NavDropdown>
+            <LinkContainer to="/kontakter">
+              <NavItem>Kontaktpersoner</NavItem>
+            </LinkContainer>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
