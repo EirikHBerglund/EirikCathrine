@@ -1,10 +1,12 @@
 import React from "react";
 import { render } from "react-dom";
-import { Switch, BrowserRouter, Route, Link } from "react-router-dom";
-import "./css/style.css";
+import { Switch, BrowserRouter, Route } from "react-router-dom";
 import { OverviewComponent } from "./components/overviewComponent";
-import { Nav, NavItem, NavDropdown, MenuItem } from "react-bootstrap";
+import { NavComponent } from "./components/NavComponent";
+import { GiftListComponent } from "./components/GiftListComponent";
 import MapContainer from "./components/MapContainer";
+
+import "./css/style.css";
 
 const App = () => (
   <div>
@@ -24,19 +26,13 @@ class Layout extends React.Component<{}, {}> {
         <div className="row">
           <NavComponent />
         </div>
-        <div>
+        <div className="row article">
           <MainComponent />
         </div>
       </div>
     );
   }
 }
-
-const Routes = () => (
-  <Layout>
-    <Route exact path="/" component={OverviewComponent} />
-  </Layout>
-);
 
 const MainComponent = () => {
   return (
@@ -49,6 +45,11 @@ const MainComponent = () => {
         path="/transport-tiloskyrkje"
         component={TransportToOsKyrkjeComponent}
       />
+      <Route
+        path="/transport-tilmoldegaard"
+        component={TransportToMoldegaardComponent}
+      />
+      <Route path="/onskeliste" component={GiftListComponent} />
     </Switch>
   );
 };
@@ -125,59 +126,34 @@ class OsKyrkjeComponent extends React.Component {
 class HeaderComponent extends React.Component {
   render() {
     return (
-      <div className="header row">
-        <div className="container">
-          <div className="row">
-            <div className="header-sideimg col-sm-2 col-xs-3">
-              <img
-                width="100%"
-                height="100%"
-                alt=""
-                src="http://cathrineogeirik.no/images/branch-1-l.png"
-              />
-            </div>
-            <div className="header-text col-sm-8 col-xs-6">
-              <h1>Eirik og Cathrine</h1>
-              <h2>23.06.2018</h2>
-            </div>
+      <div className="header row container-fluid">
+        <div className="row">
+          <div className="header-sideimg col-md-2 col-xs-3">
             <img
-              className="header-sideimg col-sm-2 col-xs-3"
+              width="100%"
+              height="100%"
               alt=""
-              src="http://cathrineogeirik.no/images/branch-1-r.png"
+              src="http://cathrineogeirik.no/images/branch-1-l.png"
             />
           </div>
-          <div className="row">
-            <img
-              className="header-img col-sm-12"
-              alt="E&C"
-              src="http://cathrineogeirik.no/images/header-image.png"
-            />
+          <div className="header-text col-md-8 col-xs-6">
+            <h1>Eirik og Cathrine</h1>
+            <h2>23.06.2018</h2>
           </div>
+          <img
+            className="header-sideimg col-md-2 col-xs-3"
+            alt=""
+            src="http://cathrineogeirik.no/images/branch-1-r.png"
+          />
+        </div>
+        <div className="row">
+          <img
+            className="header-img col-xs-12"
+            alt="E&C"
+            src="http://cathrineogeirik.no/images/header-image.png"
+          />
         </div>
       </div>
-    );
-  }
-}
-
-class NavComponent extends React.Component {
-  render() {
-    return (
-      <ul className="nav nav-tabs nav-justified">
-        <li role="presentation">
-          <Link to="/">Oversikt</Link>
-        </li>
-        <li role="presentation">
-          <Link to="oskyrkje">Os Kyrkje</Link>
-        </li>
-        <li role="presentation">
-          <Link to="moldegaard">Moldegaard</Link>
-        </li>
-        <NavDropdown title="Transport">
-          <li role="presentation">
-            <Link to="transport-tiloskyrkje">Til Os Kyrkje</Link>
-          </li>
-        </NavDropdown>
-      </ul>
     );
   }
 }
@@ -211,7 +187,65 @@ class TransportToOsKyrkjeComponent extends React.Component {
         </p>
 
         <div className="mapcontainer-wrapper">
-          <MapContainer initialLocation={OsKyrkjeLongLat} />
+          <MapContainer
+            initialLocation={OsKyrkjeLongLat}
+            placeName={"Os Kyrkje"}
+          />
+        </div>
+      </div>
+    );
+  }
+}
+
+const MoldegaardLongLat = {
+  lat: 60.193631,
+  lng: 5.499428
+};
+
+class TransportToMoldegaardComponent extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>Transport Os Kyrkje til Moldegaard</h1>
+        <p>
+          <strong>
+            Me stiller med transport frå Os Kyrkje til Moldegaard for dei som
+            ønskjer det. Det er imidlertid mulig å parkere ved Moldegaard for
+            dei som ønskjer å køyre sjølv. Gi gjerne beskjed dersom de tenker å
+            køyre sjølv så har me oversikt og kan sikre at det vert ledig
+            parkeringsplass til alle.
+          </strong>
+        </p>
+
+        <h4>Adkomst med buss</h4>
+        <p>
+          Me stiller med buss for transport Os Kyrkje til Moldegaard. Her reknar
+          me med at alle som ikkje gir beskjed om at dei køyrer til Moldegaard
+          sjølve ønskjer plass på bussen.
+        </p>
+
+        <h4>Adkomst med bil</h4>
+        <p>
+          Moldegaard ligg langs Hatvikvegen - det er skilta til Moldegaard. Me
+          skal ha selskapet i
+          <emp> Stallmestergaarden</emp>. På bildet under er Stallmestergaarden
+          merka med gul firkant. Parkeringsplass me har til rådighet er markert
+          med blå firkant. Vegen markert med raud pil går til Hatvikvegen, medan
+          blå pil viser veg til parkområdet.
+        </p>
+
+        <div className="article-image-wrapper">
+          <img
+            className="article-image"
+            src="http://www.cathrineogeirik.no/images/moldegaard-flyfoto.png"
+          />
+        </div>
+
+        <div className="mapcontainer-wrapper">
+          <MapContainer
+            initialLocation={MoldegaardLongLat}
+            placeName={"Moldegaard"}
+          />
         </div>
       </div>
     );

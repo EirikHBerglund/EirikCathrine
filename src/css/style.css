@@ -44,12 +44,38 @@ a {
   padding: 0px;
 }
 
-.mapcontainer-wrapper {
+.mapcontainer-wrapper2 {
   height: 55vh;
   width: 100%;
   padding: 1vw;
 }
 
+.mapcontainer-wrapper {
+  height: 55vh;
+  width: 100%;
+  padding: 10;
+  text-align: center;
+}
+
 .map-window {
   left: 14%;
+}
+
+.article {
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+}
+
+.article-image {
+  max-width: 80%;
+}
+
+.article-image-wrapper {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.navbar {
+  margin-bottom: 0 !important;
 }
