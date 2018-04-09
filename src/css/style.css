@@ -6,26 +6,52 @@ body {
   font-family: Playfair Display;
   text-align: center;
   vertical-align: middle;
+  max-height: 20vmax;
+}
+
+.header-col {
+  padding: 0 !important;
 }
 
 .header-text {
   text-align: center;
   vertical-align: center;
-  font-size: 5vw;
+}
+
+.header-text > h1 {
+  font-size: 5vmin;
+  margin-bottom: 1vmin;
+}
+
+.header-text > h2 {
+  font-size: 5vmin;
+  margin-top: 1vmin;
+}
+
+.header-first {
+  vertical-align: middle;
 }
 
 .header-sideimg {
-  max-height: 30%;
-  max-width: 30%;
+  max-height: 2%;
+  max-width: 20% 25px;
   vertical-align: middle;
+  margin-top: 1.5em;
 }
 
 .header-img {
   width: 100%;
+  max-width: 1400px;
+  display: inline-block !important;
+}
+
+.header-img-wrapper {
+  text-align: center;
 }
 
 .content {
-  margin-top: 10px;
+  margin-top: 1em;
+  padding-top: 1em;
   margin-bottom: 10vh;
   width: 90%;
   background: white;
@@ -81,4 +107,5 @@ a {
 
 .navbar {
   margin-bottom: 0 !important;
+  background: #0a0f0f !important;
 }

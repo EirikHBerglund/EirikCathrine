@@ -14,7 +14,7 @@ export class NavComponent extends React.Component {
           <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>
-          <Nav>
+          <Nav pullLeft>
             <LinkContainer to="/onskeliste">
               <NavItem>Ønskjeliste</NavItem>
             </LinkContainer>

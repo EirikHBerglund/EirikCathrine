@@ -128,32 +128,38 @@ class OsKyrkjeComponent extends React.Component {
 class HeaderComponent extends React.Component {
   render() {
     return (
-      <div className="header row container-fluid">
-        <div className="row">
-          <div className="header-sideimg col-md-2 col-xs-3">
-            <img
-              width="100%"
-              height="100%"
-              alt=""
-              src="http://cathrineogeirik.no/images/branch-1-l.png"
-            />
+      <div className="container-fluid">
+        <div className="header row">
+          <div className="header-col col-xs-12">
+            <div className="header-first row">
+              <div className="header-sideimg col-xs-3">
+                <img
+                  width="100%"
+                  height="100%"
+                  alt=""
+                  src="http://cathrineogeirik.no/images/branch-1-l.png"
+                />
+              </div>
+              <div className="header-text col-xs-6">
+                <h1>Cathrine & Eirik</h1>
+                <h2>23.06.2018</h2>
+              </div>
+              <img
+                className="header-sideimg col-xs-3"
+                alt=""
+                src="http://cathrineogeirik.no/images/branch-1-r.png"
+              />
+            </div>
+            <div className="row">
+              <div className="col-xs-12">
+                <img
+                  className="header-img"
+                  alt="E&C"
+                  src="http://cathrineogeirik.no/images/header-image.png"
+                />
+              </div>
+            </div>
           </div>
-          <div className="header-text col-md-8 col-xs-6">
-            <h1>Cathrine & Eirik</h1>
-            <h2>23.06.2018</h2>
-          </div>
-          <img
-            className="header-sideimg col-md-2 col-xs-3"
-            alt=""
-            src="http://cathrineogeirik.no/images/branch-1-r.png"
-          />
-        </div>
-        <div className="row">
-          <img
-            className="header-img col-xs-12"
-            alt="E&C"
-            src="http://cathrineogeirik.no/images/header-image.png"
-          />
         </div>
       </div>
     );
