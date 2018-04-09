@@ -20,6 +20,12 @@ export class ContactsComponent extends React.Component {
         role: "Visevert/Toastmaster",
         email: "",
         phone: "406 40 104"
+      },
+      {
+        name: "Fridtjof Holst Øyasæter",
+        role: "Forlover, Eirik",
+        email: "fridtjof.oyaseter@gmail.com",
+        phone: "45 48 43 23"
       }
     ];
 
@@ -46,13 +52,20 @@ export class ContactsComponent extends React.Component {
 const ContactPerson = props => {
   return (
     <div>
-      <h4>
-        {props.name} - {props.role}
-      </h4>
+      <h4>{props.name}</h4>
       <ul>
-        <li>{props.email}</li>
-        <li>{props.phone}</li>
+        <ContactPersonProperty value={"Hva: " + props.role} />
+        <ContactPersonProperty value={"Telefon: " + props.phone} />
+        <ContactPersonProperty value={"Epost:   " + props.email} />
       </ul>
     </div>
   );
+};
+
+const ContactPersonProperty = props => {
+  if (props.value.length > 1) {
+    return <li>{props.value}</li>;
+  } else {
+    return <span />;
+  }
 };

@@ -1,5 +1,6 @@
 import * as React from "react";
 import Iframe from "react-iframe";
+import { Link } from "react-router-dom";
 
 export class GiftListComponent extends React.Component {
   render() {
@@ -24,6 +25,12 @@ export class GiftListComponent extends React.Component {
           handlekurva ved å følge linken over. Dersom de kjøper i butikk, oppgi
           bryllup til <em>Marceliussen</em> så legg dei det til lista for deg.
         </p>
+        <p>
+          Dersom du veljer å kjøpe noko frå lista hos ein annan forhandlar - gi
+          gjerne ein beskjed til <Link to="/kontakter">Fridtjof</Link> så kan
+          han oppdatere ønskjelista.
+        </p>
+
         <Iframe
           url="https://www.kitchn.no/bryllup/vis-liste/?wishListId=92318"
           width="100%"
