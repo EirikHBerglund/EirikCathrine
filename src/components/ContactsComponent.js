@@ -5,7 +5,7 @@ export class ContactsComponent extends React.Component {
     const contacts = [
       {
         name: "Eirik Håland Berglund",
-        role: "Brugdom",
+        role: "Brudgom",
         email: "eirik.h.berglund@gmail.com",
         phone: "45 42 89 50"
       },
