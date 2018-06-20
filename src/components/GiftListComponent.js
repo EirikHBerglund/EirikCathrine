@@ -31,6 +31,14 @@ export class GiftListComponent extends React.Component {
           han oppdatere ønskjelista.
         </p>
 
+        <p>
+          <em>
+            NB! Dersom de ikkje vil gi noko frå lista så tek me gjerne imot
+            pengegåver også. Det kan anten overførast til konto 1203.48.83414,
+            eller via Vipps til nummer 47650016.
+          </em>
+        </p>
+
         <Iframe
           url="https://www.kitchn.no/bryllup/vis-liste/?wishListId=92318"
           width="100%"
